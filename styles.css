@@ -109,7 +109,7 @@ a:link {
     padding-bottom: 20px;
 
   }
-  @media (max-width:700px) {
+  @media (max-width:900px) {
     #first-section{
         background-image: url('./Andrew.jpg');
         display: flex;
@@ -117,6 +117,9 @@ a:link {
         height: 100vh;
         align-items:center;
 
+    }
+    .title{
+        padding-left: 0;
     }
     .container{
         display: flex;
@@ -143,5 +146,29 @@ a:link {
         order: 3;
 
     }
+
+  }
+
+  @media (max-width:650px){
+    #first-section{
+        height: 120vh;
+    }
+    #name{
+        text-align: center;
+    }
+
+    .container{
+        /* display: flex;
+        flex-direction: column;
+        */
+        height: 200vh;
+    }
+    .section-3{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
   }
