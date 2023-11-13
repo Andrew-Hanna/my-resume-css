@@ -1,0 +1,147 @@
+#first-section {
+    background-image: url('./Andrew.jpg');
+    background-size: cover;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+
+
+}
+
+#name{
+    padding: 30px;
+    margin: 0;
+    grid-area: 2/1/3/4 ;
+    font-size: 70px;
+    
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Source Serif 4', serif;
+    color: aliceblue;
+   
+}
+.subtitle{
+    grid-area: 3/1/3/2;
+    padding-left: 30px;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 20px;
+    color: aliceblue;
+
+
+}
+.andrew{
+    grid-row-start: 2;
+    padding: 40px;
+    border-radius: 100px ;
+   
+}
+body{
+    margin:0px;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: repeat(4, 1fr);
+    /* padding-left:30px; */
+    height: 30vh;
+    background-color: #AFD3E2;
+    
+    align-items: center;
+    margin-top: 20px;
+
+
+}
+ul{
+    padding:30px ;
+    padding-top:0 ;
+    color: #146C94;
+
+
+}
+.title{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Source Serif 4', serif;
+    color: aliceblue;
+    background-color: #146C94;
+    padding-left:30px ;
+    font-size: larger;
+}
+
+
+footer{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: #19A7CE;
+    color: aliceblue;
+}
+a:link {
+    
+    
+    text-decoration: none;
+  }
+  a:visited {
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .section-3{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    color: #146C94;
+  }
+  #dev{
+    
+    font-family: 'Edu TAS Beginner', cursive;
+    color: #146C94;
+    background-color: white;
+    padding: 0;
+    padding-bottom: 20px;
+
+  }
+  @media (max-width:700px) {
+    #first-section{
+        background-image: url('./Andrew.jpg');
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items:center;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+       
+        height: 150vh;
+    }
+    .andrew{
+        width: 200px;
+        
+    }
+    .edu{
+        order: 0;
+    }
+    .cou{
+        order: 1;
+
+    }
+    .pro{
+
+        order: 2;
+    }
+    .sk{
+        order: 3;
+
+    }
+
+  }
